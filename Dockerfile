@@ -17,6 +17,7 @@ RUN set -x \
         libmicrohttpd-dev \
         libssl-dev \
         make \
+        libhwloc-dev \
     ' \
     && apt-get -qq update \
     && apt-get -qq --no-install-recommends install $buildDeps \
