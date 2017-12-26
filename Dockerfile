@@ -21,6 +21,7 @@ RUN set -x \
     ' \
     && apt-get -qq update \
     && apt-get -qq --no-install-recommends install $buildDeps \
+    && apt-mark manual libhwloc5 \
     && rm -rf /var/lib/apt/lists/* \
     \
     && mkdir -p /usr/local/src/xmr-stak-cpu/build \
